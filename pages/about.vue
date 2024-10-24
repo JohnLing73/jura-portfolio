@@ -5,12 +5,11 @@
   </div>
 </template>
 <script setup>
-definePageMeta({
-  layout: 'another'
+// Both worked, 後寫會覆蓋
+useSeoMeta({
+  title: 'About'
 })
-
-// 動態切換 Layout (?之後可以換 dark mode?
-// const enableCustomLayout = () => {
-//   setPageLayout('another')
-// }
+useHead({
+  title: 'About'
+})
 </script>
