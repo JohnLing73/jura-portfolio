@@ -8,7 +8,7 @@
       <Menu />
     </header>
     <!-- Page 內容在 slot -->
-    <main class="p-2">
+    <main class="p-2 mt-10">
       <slot />
     </main>
   </div>    
