@@ -14,6 +14,12 @@
   </div>    
 </template>
 <script setup>
+const colorMode = useColorMode()
+
+// 存在 local storage 的 nuxt-color-mode 中 
+console.log(colorMode.preference)
+
+
 useHead({
   // %s 代表 index.vue 中 useHead() 或 useSeoMeta() 設定的 title
   titleTemplate: '%s - Johh Ling',
@@ -30,9 +36,12 @@ useHead({
     }
   ]
 })
+
 </script>
 <style>
 body {
-  font-family: 'Roboto'
+  font-family: 'Roboto';
+  /* set dark mode by tailwind */
+  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
 }
 </style>

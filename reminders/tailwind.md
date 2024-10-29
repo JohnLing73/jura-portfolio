@@ -13,3 +13,7 @@
         - ``css.lint.unknownAtRules: ignore``
         - 若是 scss 則 scss.lint...
       - ctrl + P 直接到設定改
+
+### 23
+- [dark mode](https://tailwindcss.com/docs/dark-mode)
+  - 預設會以 system 為主(**⚠️是電腦的系統顏色**(設定 > 色彩 > 選擇顏色)，**不是 chorme 的顏色**)
