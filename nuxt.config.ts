@@ -6,5 +6,9 @@ export default defineNuxtConfig({
   //   compatibilityVersion: 4
   // }
   // 16. modules > Tailwind
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode']
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxt/content'
+  ]
 })
