@@ -2,10 +2,15 @@
   <div class="container mx-auto max-w-2xl">
     <!-- Layout 內容在此 -->
     <header class="flex justify-between items-center mt-5">
-      <div>
-        <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">John Ling</NuxtLink>
+      <div class="flex items-center space-x-12">
+        <div>
+          <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">John Ling</NuxtLink>
+        </div>
+        <Menu />
       </div>
-      <Menu />
+      <ClientOnly>
+        <ColorModeSelector />
+      </ClientOnly>
     </header>
     <!-- Page 內容在 slot -->
     <main class="p-2 mt-10">
@@ -14,12 +19,6 @@
   </div>    
 </template>
 <script setup>
-const colorMode = useColorMode()
-
-// 存在 local storage 的 nuxt-color-mode 中 
-console.log(colorMode.preference)
-
-
 useHead({
   // %s 代表 index.vue 中 useHead() 或 useSeoMeta() 設定的 title
   titleTemplate: '%s - Johh Ling',
