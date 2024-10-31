@@ -1,15 +1,7 @@
 <template>
-  <div>
-    About me
-    <!-- <button @click="enableCustomLayout">Change Layout</button> -->
-  </div>
+  <article class="prose dark:prose-invert prose-h1:text-2xl">
+    <ContentDoc
+      path="/about"
+    />
+  </article>
 </template>
-<script setup>
-// Both worked, 後寫會覆蓋
-useSeoMeta({
-  title: 'About'
-})
-useHead({
-  title: 'About'
-})
-</script>
