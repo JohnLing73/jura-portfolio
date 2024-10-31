@@ -10,3 +10,12 @@
      - 下載 [tailwind/typography plugin](https://github.com/tailwindlabs/tailwindcss-typography) 來自動設定 prose cmp 的樣式
      - [明定哪個地方要設定 prose 樣式](https://github.com/tailwindlabs/tailwindcss-typography) (在 ContentDoc 加上 prose class)
      - dark:prose-invert dark mode 反轉顏色
+   - [Front-matter](https://content.nuxt.com/usage/markdown#front-matter): Front-matter 是將 CMS 產生的 markdown 取得 meta-data，在 Nuxt Content 中 front-matter 使用 YAML 語法
+     - 使用:
+        1. 寫在 md 最上方，開始與結束使用 --- ，中間填寫 YAML
+        2. 設置 meta data [useContentHead()](https://content.nuxt.com/composables/use-content-head)
+     - [YAML](https://zh.wikipedia.org/zh-tw/YAML): 可讀性高，用來表達資料序列化的格式。
+       - key: value
+       - object 就多層
+       - array 前面多 '-'
+     - [CMS](https://www.oracle.com/tw/content-management/what-is-cms/): eg: Wordpress 為一種 CMS db
