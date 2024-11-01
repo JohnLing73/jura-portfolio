@@ -23,3 +23,9 @@
      - [CMS](https://www.oracle.com/tw/content-management/what-is-cms/): eg: Wordpress 為一種 CMS db
    - Props
      - path: 指定使用該檔案
+   - [queryContent()](https://content.nuxt.com/composables/query-content): 搜尋 /content 內容
+     - 預設 rootPath('/content')
+       - eg: queryContent('/blog'): 抓取 /content/blog 下的
+     - **使用注意需要 wrapped by useAsyncData()**
+     - find()
+     - only(): 僅取回 specific fields **在find() 前使用**
