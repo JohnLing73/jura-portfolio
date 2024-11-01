@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Projects
-  </div>
+<div class="not-prose">
   <section v-if="pending">Loading...</section>
   <section v-else-if="error">Something went wrong... Try again!</section>
   <section v-else>
@@ -20,11 +18,9 @@
       </li>
     </ul>
   </section>
+</div>
 </template>
 <script setup>
-// Executed on both server and client
-// console.log(await $fetch('https://api.github.com/users/piotr-jura-udemy/repos'))
-
 const { error , pending, data } = await useFetch('https://api.github.com/users/piotr-jura-udemy/repos')
 
 const repos = computed(() => data.value.filter(repo => repo.description)
