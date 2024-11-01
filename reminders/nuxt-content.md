@@ -26,6 +26,9 @@
    - [queryContent()](https://content.nuxt.com/composables/query-content): 搜尋 /content 內容
      - 預設 rootPath('/content')
        - eg: queryContent('/blog'): 抓取 /content/blog 下的
+     - query 語法是使用 MongoDB query Syntax
      - **使用注意需要 wrapped by useAsyncData()**
      - find()
      - only(): 僅取回 specific fields **在find() 前使用**
+     - where()
+       - $ne

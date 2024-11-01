@@ -15,7 +15,6 @@
 <script setup>
 const showNextModelLabel = ref(false)
 const colorMode = useColorMode()
-console.log(colorMode.preference)
 
 const modes = [
   'system', // 0
