@@ -10,5 +10,18 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/content'
-  ]
+  ],
+  content: {
+    highlight: {
+      theme: {
+        default: 'min-light',
+        dark: 'min-dark'
+      }
+    }
+  },
+  // vid 23.就需要加的設定沒加到，補上
+  // 沒這段的話，code block 有部分的字會沒有正確的 style
+  colorMode: {
+    classSuffix: ''
+  }
 })
