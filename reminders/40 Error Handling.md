@@ -1,0 +1,7 @@
+- [Content Doc Error Handling](https://content.nuxt.com/components/content-doc#slots)
+  - not-found slot
+    - slot props doc 是存在於 default slot 中的而非 not-found slot
+- [Nuxt Error Page](https://nuxt.com/docs/getting-started/error-handling#error-page)
+  - **不算 route ，不該被放在 /pages，不定義 definePageMeta({})**
+    - 有 error props(object)
+    - [error.vue](https://nuxt.com/docs/guide/directory-structure/error)
