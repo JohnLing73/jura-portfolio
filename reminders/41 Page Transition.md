@@ -1,0 +1,5 @@
+- Vue Transition
+  - 若 Transition 的元素為 cmp，則只能有一個 root element
+  - mode
+    - default: enter 跟 in 的 transition 同時啟動 (會造成畫面跳動(Layout 上會存在兩個 el ; 要 out 的從原本佔有的位子消失，in 的從下方上跳補上))
+- [Nuxt Transition](https://nuxt.com/docs/getting-started/transitions)
