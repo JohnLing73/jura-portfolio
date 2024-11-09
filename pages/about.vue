@@ -1,5 +1,5 @@
 <template>
-  <article class="prose dark:prose-inver max-w-nonet">
+  <article class="prose dark:prose-invert max-w-nonet">
     <ContentDoc
       path="/about"
     />
