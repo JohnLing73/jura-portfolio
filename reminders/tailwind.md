@@ -17,3 +17,6 @@
 ### 23
 - [dark mode](https://tailwindcss.com/docs/dark-mode)
   - 預設會以 system 為主(**⚠️是電腦的系統顏色**(設定 > 色彩 > 選擇顏色)，**不是 chorme 的顏色**)
+
+### 44
+- [group modifier](https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state) 根據 parent el 的狀態想幫 chlid el 加入 class 時使用

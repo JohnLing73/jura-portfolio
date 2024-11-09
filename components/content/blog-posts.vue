@@ -12,10 +12,10 @@
         >
           <NuxtLink 
             :to="post._path"
-            class="column hover:bg-gray-100 dark:hover:bg-gray-800"
+            class="column hover:bg-gray-100 dark:hover:bg-gray-800 group"
           >
             <div 
-              :class="{ 'text-white dark:text-gray-900 text-opacity-0 dark:text-opacity-0': !post.displayYear, 'text-gray-400 dark:text-gray-500': post.displayYear }"
+              :class="{ 'text-white group-hover:text-gray-100 dark:text-gray-900 dark:group-hover:text-gray-800': !post.displayYear, 'text-gray-400 dark:text-gray-500': post.displayYear }"
             >{{ post.year  }}</div>
             <div>{{ post.title }}</div>
           </NuxtLink>
