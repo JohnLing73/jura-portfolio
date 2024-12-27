@@ -29,5 +29,11 @@ export default defineNuxtConfig({
   // 沒這段的話，code block 有部分的字會沒有正確的 style
   colorMode: {
     classSuffix: ''
+  },
+  // vid 45. nuxt generate 時預產 sitemap
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
+    }
   }
 })
