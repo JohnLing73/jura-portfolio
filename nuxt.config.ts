@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     pageTransition: {
       name: 'page',
       mode: 'out-in'
+    },
+    head: {
+      meta: [{
+        name: 'google-site-verification',
+        content: 'yLDk1ZhxaxJydoJbgPYEhdK_WokDMDMvQA-3Ilggtyc'
+      }]
     }
   },
   // future: {

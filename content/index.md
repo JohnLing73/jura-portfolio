@@ -1,16 +1,17 @@
 ---
-title: 'Main Page'
-description: 'Tis is Main Page'
+title: "John Ling Nuxt3 Main Page"
+description: "Tis is Main Page"
 head:
   meta:
-    - name: 'og:title'
-      content: 'Main Page'
-    - name: 'og-description'
-      content: 'og:description'
+    - name: "og:title"
+      content: "Main Page"
+    - name: "og-description"
+      content: "og:description"
 ---
-#  Hello from main page
 
-## I'm Piotr
+# John Ling Nuxt3 Main Page
+
+## I'm John
 
 Read more [about me](/about), or see my latest [projects](/projects)
 
